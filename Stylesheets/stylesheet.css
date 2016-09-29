@@ -1,3 +1,6 @@
+/*For SVG images. Wrap the entire SVG tag in a <div> tag 
+and assign svg_outer and svg_inner class to it, like this <div class="svg_outer svg_inner">
+I got this from Lord Simon*/
 div.svg_outer {
   display: block;
   margin-bottom: 0;
@@ -14,6 +17,8 @@ div.svg_inner {
   display: block;
   text-align: center;
 }
+
+/*Centers and gives some space around headings*/
 h1, h2 {
   text-align: center;
   page-break-before: always;
@@ -25,9 +30,12 @@ h3, h4, h5, h6 {
   margin-bottom: 12%;
   margin-top: 10%;
 }
+/*Some padding to lists*/
 ol, ul {
   padding-left: 8%;
 }
+
+/*Image style for the img tags. Don't mess with this.*/
 img {
   display: block;
   max-height: 100%;
@@ -41,6 +49,8 @@ img {
   margin-bottom: 2%;
   margin-top: 2%;
 }
+
+/*Credit styles. You can customize this.*/
 div.credits {
   text-align: center;
   font-size: 120%;
@@ -49,11 +59,15 @@ div.credits {
   margin-bottom: 5%;
   margin-top: 5%;
 }
+
+/*Making those horizontal rules more visible*/
 hr {
   color: black;
   background-color: black;
   height: 2px;
 }
+
+/*General style for links. You may customize the colors*/
 a:link {
   text-decoration: none;
   color: #0B0080;
