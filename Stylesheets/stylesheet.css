@@ -1,3 +1,19 @@
+/*Some space*/
+body {
+  margin: 2%;
+}
+
+/*Breaks extremely long words, screams, wails etc to fit viewer window.*/
+p {
+  font-size: 1em;
+  overflow-wrap: break-word;
+}
+
+/*Wraps pre content*/
+pre {
+  white-space: pre-wrap;
+}
+
 /*For SVG images. Wrap the entire SVG tag in a <div> tag 
 and assign svg_outer and svg_inner class to it, like this <div class="svg_outer svg_inner">
 I got this from Lord Simon*/
@@ -21,12 +37,14 @@ div.svg_inner {
 /*Centers and gives some space around headings*/
 h1, h2 {
   text-align: center;
+  font-weight:bold;
   page-break-before: always;
   margin-bottom: 10%;
   margin-top: 10%;
 }
 h3, h4, h5, h6 {
   text-align: center;
+  font-weight:bold;
   margin-bottom: 12%;
   margin-top: 10%;
 }
