@@ -1,8 +1,3 @@
-/*Some space*/
-body {
-  margin: 2%;
-}
-
 /*Breaks extremely long words, screams, wails etc to fit viewer window.*/
 p {
   font-size: 1em;
@@ -77,6 +72,9 @@ div.credits {
   margin-bottom: 5%;
   margin-top: 5%;
 }
+div.credits > p > b {
+  font-size: 1.1em;
+}
 
 /*Making those horizontal rules more visible*/
 hr {
@@ -106,3 +104,8 @@ dd, dt, dl {
   padding: 0;
   margin: 0;
 }
+/*Some space
+body {
+  margin: 2%;
+}
+*/
