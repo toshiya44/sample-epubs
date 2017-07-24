@@ -1,102 +1,80 @@
 /*Breaks extremely long words, screams, wails etc to fit viewer window.*/
-p {
-  font-size: 1em;
+* {
   overflow-wrap: break-word;
 }
-
+p, div, span {
+  font-size: 1em;
+}
 /*Wraps pre content*/
 pre {
   white-space: pre-wrap;
 }
 
-/*For SVG images. Wrap the entire SVG tag in a <div> tag 
-and assign svg_outer and svg_inner class to it, like this <div class="svg_outer svg_inner">
-I got this from Lord Simon*/
-div.svg_outer {
-  display: block;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  text-align: left;
-}
-div.svg_inner {
-  display: block;
-  text-align: center;
-}
-
 /*Centers and gives some space around headings*/
 h1, h2 {
   text-align: center;
-  font-weight:bold;
+  font-weight: bold;
   page-break-before: always;
+  margin-top: 5%;
   margin-bottom: 10%;
-  margin-top: 10%;
 }
 h3, h4, h5, h6 {
   text-align: center;
-  font-weight:bold;
-  margin-bottom: 12%;
-  margin-top: 10%;
+  font-weight: bold;
+  margin-top: 12%;
+  margin-bottom: 10%;
 }
 /*Some padding to lists*/
 ol, ul {
-  padding-left: 8%;
+  padding-left: 2em;
+}
+li {
+  padding-bottom: 0.4em;
 }
 
 /*Image style for the img tags. Messing with this might break image layout.*/
 img {
   display: block;
+  height: auto;
+  width: auto;
+  margin: auto;
   max-height: 100%;
   max-width: 100%;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2%;
-  margin-top: 2%;
+  padding: 1% 0;
 }
 
 /*Credit styles. You can customize this.*/
 div.credits {
   text-align: center;
-  font-size: 1.15em;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 5%;
-  margin-top: 5%;
+  font-size: 1.1em;
+  margin: auto;
+  border-style: solid;
+  border-width: 4px 0px 4px 0px;
+  border-color: #808080;
 }
 div.credits > p > b {
   font-size: 1.1em;
 }
 
 /*Making those horizontal rules more visible*/
-hr {
+hr, .hr-alternative {
   height: 2px;
-  color: #808080;
-  background-color: #808080;
+  width: 100%;
+  background-color: #262626;
 }
 
 /*General style for links. You may customize the colors*/
-a:link {
+a {
   text-decoration: none;
-  color: #0B0080;
 }
-a:visited {
-  text-decoration: none;
+a:link {
+  color: rgb(0, 0, 255);
 }
 a:hover {
-  text-decoration: none;
-  color: #8A0707;
+  color: rgb(0, 255, 0);
 }
 a:active {
-  text-decoration: underline;
+  color: rgb(255, 0, 0);
 }
 
 /*Fix for Mediawiki's abuse of definition list tags.*/
@@ -104,8 +82,29 @@ dd, dt, dl {
   padding: 0;
   margin: 0;
 }
-/*Some space
-body {
-  margin: 2%;
+
+/* Alternative headings */
+.heading {
+  font-size: 1.8em;
+  text-align: center;
+  font-weight: bold;
+  page-break-before: always;
+  margin-top: 6%;
+  margin-bottom: 10%;
 }
-*/
+
+/* for caption text */
+.thumbcaption {
+  display: block;
+  font-size: 0.9em;
+  padding: 2% 5%;
+  border-style: solid;
+  border-color: rgb(0, 255, 0);
+  border-width: 0 0 0 0.5em;
+}
+
+/* comments and inline notes */
+.cmnt {
+  margin: 3%;
+  font-size: 0.85em;
+}
